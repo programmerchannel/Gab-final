@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Agency FB';
+    src: url('../static/fonts/AgencyFB-Bold.ttf') format('truetype');
+}
+
+.alert--black-background {
+    background-color: #060605 !important;
+}
+
+.btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: #0781FE;
+    border-color: #0781FE; }
+
+.back-to-login-link {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.login__language{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 120px;
+    z-index: 100000;
+}
+
+@media (max-width: 862px) {
+    .login-badge {
+        display: none; } }
+
+.form-control.is-invalid {
+    border: 1px solid #FF3548;
+}
+
+.form-select.is-invalid {
+    border: 1px solid #FF3548;
+}
+
+.form-check-input.is-invalid {
+    border: 1px solid #FF3548 !important;
+}
+
+.form-select.is-invalid:not([multiple]):not([size]){
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.51923 4.03847L1.48077 0L0 1.48077L4.03846 5.51924L5.51923 7L7 5.51923L11.0385 1.48077L9.5577 3.13642e-06L5.51923 4.03847Z' fill='%23fff'/%3E%3C/svg%3E");
+}
+form .invalid-feedback{
+    text-align: left;
+    padding-left: 5px;
+    margin-top: -15px;
+}
+
+.login__row .login__user-scope-list{
+    text-align: left;
+}
+
+.login__row.login__submit-via  a {
+    appearance: button; /* CSS3 */
+    -webkit-appearance: button; /* Safari and Chrome */
+    -moz-appearance: button; /* Firefox */
+    -ms-appearance: button; /* Internet Explorer */
+    -o-appearance: button; /* Opera */
+}
+
+.form-wrapper li {
+    text-align: left;
+    padding-left: 0.3em;
+}
+
+:lang(vi){
+    font-family: "Roboto", sans-serif;
+}
+
+.login-badge__image {
+    margin: 30px;
+    height: 150px;
+}
+
+.btn.btn--google {
+    background-image: none;
+}
+
+#left-split {
+    height: 100%;
+    width: 50%;
+    display: none;
+    position: fixed;
+    left: 0;
+    --image-width: min(800px, 95%);
+    --image-downward-offset: 180px;
+}
+
+#upper-split {
+    position: relative;
+    height: calc(50% + var(--image-downward-offset));
+    background:
+        linear-gradient(97.44deg, #0781FE 0%, #6972EA 100%);
+    border-bottom: 60px solid #5A5C61;
+}
+
+#lower-split {
+    position: relative;
+    height: calc(50% - var(--image-downward-offset));
+    background: rgb(62,65,68);
+    background: linear-gradient(180deg, rgba(62,65,68,1) 0%, rgba(32,32,32,1) 100%);
+}
+
+#hero {
+    position: absolute;
+    width: var(--image-width);
+    bottom: 0px;
+    transform: translateY(14%);
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+#awards {
+    position: absolute;
+    width: min(750px, 80%);
+    top: 40px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+#right-split {
+    width: 100%;
+    position: absolute;
+    right: 0;
+}
+
+@media only screen and (min-width: 900px) {
+    #left-split {
+        width: 50%;
+        display: block;
+    }
+
+    #right-split {
+        width: 50%;
+    }
+}
+#toast {
+    color: #fff;
+}
+
+#noscript-message {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Update password custom styles */
+body.page-password-up {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url("../static/images/login-bg.png");
+    background-color: #060605 !important;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 20%;
+}
+@media (min-width: 576px) {
+    body.page-password-up {
+        background-size: auto 350px;
+    }
+}
+@media (min-width: 991px) {
+    body.page-password-up {
+        background-size: auto 75%;
+        background-position: 20% 50%;
+    }
+}
+
+.page-password-up__header {
+    margin: 80px 0 60px;
+}
+.page-password-up__title {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: "Agency FB", sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #109BFF;
+}
+@media (min-width: 991px) {
+    .page-password-up__title {
+        font-size: 60px;
+    }
+}
+
+.page-password-up__content-wrapper {
+    width: 100%;
+    margin: 300px 0 60px;
+}
+@media (min-width: 991px) {
+    .page-password-up__content-wrapper {
+        margin: 60px 0;
+    }
+}
+
+.page-password-up__footer {
+    margin-top: 60px;
+}
+.page-password-up__footer-text {
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-password-up .login__logo {
+    margin-top: 0;
+}
+@media (max-width: 768px) {
+    .page-password-up .login__logo {
+        display: none;
+    }
+}
+
+.page-password-up__login-wrapper {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(30, 30, 30, 1);
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+@media (min-width: 576px) {
+    .page-password-up__login-wrapper {
+        padding: 40px;
+    }
+}
+.page-password-up__login-wrapper .login {
+    width: 100%;
+    max-width: 375px;
+}
+
+.page-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
